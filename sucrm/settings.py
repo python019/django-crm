@@ -24,7 +24,7 @@ SECRET_KEY = '=#k_k1e^&l_-d8+6g8n^g((p1@sg$9=-hsb-&l-$r(miroiy2@'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['susyscrm.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -82,8 +82,15 @@ WSGI_APPLICATION = 'sucrm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'df6378bnqmi0n2',
+        'USER': 'ltirfnibajkuou',
+        'PASSWORD': 'bb9f02d44c017973dc62a0114914bec4e2998d16c2344cb3c63a79a6695fbd5e',
+        'HOST': 'ec2-18-234-17-166.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
