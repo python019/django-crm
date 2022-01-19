@@ -4,5 +4,5 @@
 
 
 ```
-https://subux.uz
+https://susyscrm.herokuapp.com/
 ```
